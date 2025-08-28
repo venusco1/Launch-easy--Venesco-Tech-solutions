@@ -1555,7 +1555,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -1563,7 +1563,7 @@ section,
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
   position: relative;
 }
 
@@ -1611,7 +1611,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 2;
-  padding: 80px 15px;
+  /* padding: 80px 15px; */
 }
 
 .hero .hero-content {
@@ -1824,7 +1824,7 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  padding: 40px 0;
+  padding: 5px 0;
 }
 
 .clients .swiper-slide img {
@@ -5716,3 +5716,81 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.aboutus {
+  text-align: center;
+  font-weight:bold;
+}
+
+.abouttitle{
+  text-align: center;
+}
+
+
+
+  .about-us {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .section-subtitle {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .about-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+
+  .point-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s forwards;
+  }
+
+  .point-card h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  .point-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  /* Hover Effect */
+  .point-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Fade Up Animation */
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Animate cards with delay */
+  .point-card:nth-child(1) { animation-delay: 0.2s; }
+  .point-card:nth-child(2) { animation-delay: 0.4s; }
+  .point-card:nth-child(3) { animation-delay: 0.6s; }
+  .point-card:nth-child(4) { animation-delay: 0.8s; }
